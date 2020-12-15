@@ -252,6 +252,13 @@
    :replace-deps  {deps-ancient/deps-ancient {:mvn/version "RELEASE"}}
    :main-opts     ["-m" "deps-ancient.deps-ancient"]}
 
+  :project/slow-namespace-clj
+  {:extra-deps
+   {io.dominic/slow-namespace-clj
+    {:git/url "https://git.sr.ht/~severeoverfl0w/slow-namespace-clj"
+     :sha     "9a804bd37c662629c3ecda18375c59fd8d9f0928"}}
+   :main-opts ["-m" "io.dominic.slow-namespace-clj.core"]}
+
   ;; End of: Projects and dependencies
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
